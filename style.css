@@ -1,0 +1,578 @@
+/* ===============================
+   General Settings
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ===============================
+   Navigation
+================================ */
+
+header {
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+
+/* ===============================
+   Home
+================================ */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    background: #eaf2ff;
+}
+
+.home-content {
+    width: 1100px;
+    max-width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.home-text {
+    max-width: 650px;
+}
+
+.hello {
+    font-size: 20px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.home h1 {
+    font-size: 60px;
+    margin: 5px 0;
+    color: #111827;
+}
+
+.home h2 {
+    font-size: 30px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 17px;
+}
+
+
+/* ===============================
+   Profile Image
+================================ */
+
+.profile img {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ===============================
+   Buttons
+================================ */
+
+.buttons {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #2563eb;
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+.second-btn {
+    background: #111827;
+}
+
+.second-btn:hover {
+    background: #374151;
+}
+
+
+/* ===============================
+   Common Section
+================================ */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 80px 25px;
+}
+
+.section-title {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 40px;
+
+    color: #111827;
+}
+
+.section-title::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    background: #2563eb;
+
+    margin: 10px auto;
+}
+
+
+/* ===============================
+   About
+================================ */
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 17px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+
+/* ===============================
+   Skills
+================================ */
+
+.skills-section {
+    max-width: none;
+    background: #eef2ff;
+}
+
+.skills-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.skill-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+
+/* ===============================
+   Projects
+================================ */
+
+.projects-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-card h3 {
+    color: #2563eb;
+
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+
+    color: #555;
+
+    font-weight: bold;
+}
+
+
+/* ===============================
+   Education
+================================ */
+
+.education-section {
+    background: #eef2ff;
+    max-width: none;
+}
+
+.education-card {
+    max-width: 700px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.education-card h3 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+
+/* ===============================
+   Contact
+================================ */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section p {
+    margin-bottom: 25px;
+}
+
+.contact-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    text-decoration: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 10px 25px;
+
+    border-radius: 6px;
+}
+
+.contact-links a:hover {
+    background: #1d4ed8;
+}
+
+
+/* ===============================
+   Footer
+================================ */
+
+footer {
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* ===============================
+   Theme Button
+================================ */
+
+#theme-button {
+    border: none;
+
+    background: white;
+
+    font-size: 18px;
+
+    padding: 8px 12px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+
+/* ===============================
+   Dark Mode
+================================ */
+
+body.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+body.dark-mode .section-title,
+body.dark-mode .home h1 {
+    color: white;
+}
+
+body.dark-mode .home {
+    background: #172033;
+}
+
+body.dark-mode .skills-section,
+body.dark-mode .education-section {
+    background: #111827;
+}
+
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .education-card {
+    background: #1f2937;
+    color: white;
+}
+
+body.dark-mode .project-card span {
+    color: #d1d5db;
+}
+
+body.dark-mode .about-content,
+body.dark-mode .contact-section {
+    color: #f9fafb;
+}
+
+
+/* ===============================
+   Typing Cursor
+================================ */
+
+#typing::after {
+    content: "|";
+
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+
+}
+
+
+/* ===============================
+   Mobile Responsive
+================================ */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .home-content {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding: 60px 0;
+    }
+
+    .home h1 {
+        font-size: 45px;
+    }
+
+    .home h2 {
+        font-size: 23px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .profile img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+}
+
+
+/* Smaller Mobile Screens */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .home h2 {
+        font-size: 20px;
+    }
+
+    .home-text p {
+        font-size: 15px;
+    }
+
+    .profile img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+}
